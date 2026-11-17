@@ -1,0 +1,21 @@
+﻿
+# --- repo hygiene (auto) ---
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+build/
+out/
+.next/
+target/
+**/target/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db

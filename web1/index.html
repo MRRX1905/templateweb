@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dark GPT: a private reasoning engine</title>
+<meta name="description" content="A dark landing page template for an AI product. Scroll driven hero, bilingual copy, no build step.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0B0A09">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="a11y.skip">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" data-nav>
+  <div class="nav__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__name">Dark GPT</span>
+    </a>
+
+    <nav class="nav__links" data-i18n-aria="nav.aria" aria-label="Sections">
+      <a href="#turn" data-i18n="nav.how">How it works</a>
+      <a href="#caps" data-i18n="nav.caps">Capabilities</a>
+      <a href="#why" data-i18n="nav.why">Why</a>
+    </nav>
+
+    <div class="nav__end">
+      <div class="lang" role="group" data-i18n-aria="nav.langAria" aria-label="Language">
+        <button type="button" class="lang__btn" data-lang-btn="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang__btn" data-lang-btn="id" aria-pressed="false">ID</button>
+      </div>
+      <a class="btn btn--ghost btn--sm" href="#start" data-i18n="cta.request">Request access</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Act 1: layered hero. Background, subject, foreground and a density
+       column resolving as separate planes, with the headline between them. -->
+  <section class="hero" id="top" data-hero>
+    <div class="hero__scene" aria-hidden="true">
+      <div class="plane plane--bg">
+        <div class="plane__inner">
+          <div class="grid"></div>
+          <div class="floor"><div class="floor__grid"></div></div>
+          <div class="glow glow--a"></div>
+          <div class="glow glow--b"></div>
+          <div class="horizon"></div>
+        </div>
+      </div>
+
+      <div class="plane plane--subject">
+        <div class="plane__inner">
+          <div class="orb-wrap">
+            <div class="orb-fallback"></div>
+            <canvas class="orb" data-orb width="900" height="900"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="plane plane--scrim"></div>
+
+      <div class="plane plane--fg">
+        <div class="plane__inner">
+          <span class="dust" style="--x:8%;--y:26%;--s:2px;--d:0s"></span>
+          <span class="dust" style="--x:19%;--y:72%;--s:3px;--d:-3s"></span>
+          <span class="dust" style="--x:31%;--y:14%;--s:2px;--d:-6s"></span>
+          <span class="dust" style="--x:42%;--y:58%;--s:2px;--d:-1.5s"></span>
+          <span class="dust" style="--x:54%;--y:34%;--s:3px;--d:-8s"></span>
+          <span class="dust" style="--x:63%;--y:80%;--s:2px;--d:-4.5s"></span>
+          <span class="dust" style="--x:72%;--y:20%;--s:2px;--d:-2s"></span>
+          <span class="dust" style="--x:81%;--y:64%;--s:3px;--d:-7s"></span>
+          <span class="dust" style="--x:90%;--y:38%;--s:2px;--d:-5s"></span>
+          <span class="dust" style="--x:96%;--y:76%;--s:2px;--d:-2.5s"></span>
+          <span class="dust" style="--x:25%;--y:44%;--s:2px;--d:-6.5s"></span>
+          <span class="dust" style="--x:68%;--y:50%;--s:2px;--d:-0.8s"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__content">
+      <p class="eyebrow" data-i18n="hero.eyebrow">A private reasoning engine</p>
+      <h1 class="hero__title">
+        <span class="line" data-i18n="hero.h1a">Reasoning that never</span>
+        <span class="line" data-i18n="hero.h1b">leaves the room.</span>
+      </h1>
+      <p class="lede" data-i18n="hero.lede">Dark GPT answers the questions your team cannot put in someone else&rsquo;s browser. It runs on your cluster, cites every source it used, and clears its traces when you ask.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#start" data-i18n="cta.request">Request access</a>
+        <a class="btn btn--quiet" href="#turn" data-i18n="hero.secondary">See how it works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Act 2: pinned kinetic copy. The frame holds still while the lines assemble. -->
+  <section class="turn" id="turn" data-turn>
+    <div class="turn__pin">
+      <div class="turn__inner">
+        <div class="lines" data-lines>
+          <p class="tl" data-i18n="turn.l1">The question you cannot paste into a browser tab</p>
+          <p class="tl" data-i18n="turn.l2">is the one worth asking.</p>
+          <p class="tl" data-i18n="turn.l3">Dark GPT answers it on your own hardware,</p>
+          <p class="tl" data-i18n="turn.l4">shows the documents it read,</p>
+          <p class="tl tl--accent" data-i18n="turn.l5">and forgets when you say so.</p>
+        </div>
+        <div class="turn__rail" aria-hidden="true"><span data-rail-fill></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Act 3: lateral rail. Horizontal travel reads as options, not argument. -->
+  <section class="caps" id="caps" data-caps>
+    <div class="caps__pin">
+      <div class="caps__inner">
+        <header class="caps__head">
+          <h2 data-i18n="caps.h2">What you can count on</h2>
+        </header>
+
+        <div class="caps__viewport">
+          <div class="caps__track" data-track>
+            <article class="panel panel--wide">
+              <div class="panel__map" aria-hidden="true">
+                <svg viewBox="6 30 316 162" role="presentation">
+                  <ellipse class="map-line" cx="146" cy="112" rx="118" ry="70"></ellipse>
+                  <ellipse class="map-line map-line--dash" cx="146" cy="112" rx="78" ry="46"></ellipse>
+                  <line class="map-line" x1="146" y1="42" x2="146" y2="182"></line>
+                  <line class="map-line" x1="28" y1="112" x2="264" y2="112"></line>
+                  <circle class="map-node" cx="146" cy="112" r="13"></circle>
+                  <circle class="map-node" cx="112" cy="88" r="4"></circle>
+                  <circle class="map-node" cx="196" cy="132" r="4"></circle>
+                  <circle class="map-node" cx="120" cy="146" r="4"></circle>
+                  <path class="map-line" d="M146 112 L306 58"></path>
+                  <path class="map-cut" d="M236 78 l16 14 M252 78 l-16 14"></path>
+                  <circle class="map-outside" cx="306" cy="58" r="9"></circle>
+                </svg>
+              </div>
+              <h3 data-i18n="caps.p1.t">Inside the perimeter</h3>
+              <p data-i18n="caps.p1.b">Inference runs on your cluster. No prompt, document fragment, or answer crosses to an outside network.</p>
+            </article>
+
+            <article class="panel">
+              <h3 data-i18n="caps.p2.t">Citations you can open</h3>
+              <p data-i18n="caps.p2.b">Every sentence carries its source, so a reviewer can check the reasoning instead of trusting it.</p>
+              <p class="mini-label" data-i18n="caps.p2.label">Sources attached to one answer</p>
+              <ul class="refs">
+                <li data-i18n="caps.p2.s1">Master agreement, clause 4.2, revision 12 May 2026</li>
+                <li data-i18n="caps.p2.s2">Q3 forecast, sheet 2, updated 3 September 2026</li>
+                <li data-i18n="caps.p2.s3">Incident log 2026-114, page 6</li>
+              </ul>
+            </article>
+
+            <article class="panel">
+              <h3 data-i18n="caps.p3.t">Context that holds whole files</h3>
+              <p data-i18n="caps.p3.b">A long context window keeps the middle of a document in play, so answers do not drift after the first ten pages.</p>
+              <div class="pages" aria-hidden="true">
+                <span></span><span></span><span class="is-lit"></span><span></span><span></span><span></span><span></span><span class="is-lit"></span><span></span><span></span>
+              </div>
+            </article>
+
+            <article class="panel panel--wide">
+              <h3 data-i18n="caps.p4.t">Forget on request</h3>
+              <p data-i18n="caps.p4.b">One command clears the conversation, the working cache, and the index for that task.</p>
+              <pre class="cmd"><code>darkgpt forget --session 8f21 --purge-index</code></pre>
+            </article>
+          </div>
+        </div>
+
+        <div class="caps__dots" data-dots aria-hidden="true">
+          <i></i><i></i><i></i><i></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Act 4: a wipe reveals the comparison. -->
+  <section class="why" id="why" data-why>
+    <div class="why__wrap">
+      <p class="eyebrow" data-i18n="why.eyebrow">Why Dark GPT</p>
+      <h2 data-i18n="why.h2">The same question, two different paths</h2>
+
+      <div class="compare-scroll">
+        <table class="compare" data-compare>
+          <caption class="visually-hidden" data-i18n="why.caption">Where a prompt goes with a hosted assistant and with Dark GPT</caption>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="why.col1">What happens</th>
+              <th scope="col" data-i18n="why.col2">Hosted assistant</th>
+              <th scope="col" data-i18n="why.col3">Dark GPT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="--i:0">
+              <th scope="row" data-i18n="why.r1.label">Your prompt</th>
+              <td><span class="cell-label" data-i18n="why.col2">Hosted assistant</span><span data-i18n="why.r1.host">Crosses someone else&rsquo;s network</span></td>
+              <td class="compare__ours"><span class="cell-label" data-i18n="why.col3">Dark GPT</span><span data-i18n="why.r1.dark">Stays on your cluster</span></td>
+            </tr>
+            <tr style="--i:1">
+              <th scope="row" data-i18n="why.r2.label">The answer</th>
+              <td><span class="cell-label" data-i18n="why.col2">Hosted assistant</span><span data-i18n="why.r2.host">Arrives without its sources</span></td>
+              <td class="compare__ours"><span class="cell-label" data-i18n="why.col3">Dark GPT</span><span data-i18n="why.r2.dark">Names the document it used</span></td>
+            </tr>
+            <tr style="--i:2">
+              <th scope="row" data-i18n="why.r3.label">The record</th>
+              <td><span class="cell-label" data-i18n="why.col2">Hosted assistant</span><span data-i18n="why.r3.host">Lives in a vendor account</span></td>
+              <td class="compare__ours"><span class="cell-label" data-i18n="why.col3">Dark GPT</span><span data-i18n="why.r3.dark">Gone when you ask</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="why__close" data-i18n="why.close">Nothing gets published without a decision from you, so we call it dark.</p>
+    </div>
+  </section>
+
+  <!-- Act 5: the page stops moving and starts responding. -->
+  <section class="cta" id="start" data-cta>
+    <div class="cta__glow" aria-hidden="true"></div>
+    <div class="cta__inner">
+      <h2 data-i18n="cta.h2">Bring the hardest question you have</h2>
+      <p data-i18n="cta.sub">We install Dark GPT on your cluster within a week. You test it with the files you would not normally upload.</p>
+      <a class="btn btn--primary btn--lg cta__btn" href="#start" data-cta-btn data-i18n="cta.request">Request access</a>
+      <p class="fine" data-i18n="cta.fine">No card needed. A security review can be scheduled.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <div>
+      <p class="foot__brand">Dark GPT</p>
+      <p class="foot__note" data-i18n="foot.note">A landing page template for AI products. All copy is placeholder.</p>
+    </div>
+    <a class="btn btn--quiet btn--sm" href="#start" data-i18n="cta.request">Request access</a>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

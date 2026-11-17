@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rimbun: a display grotesque from Tapak Aksara</title>
+<meta name="description" content="A specimen landing page template for a type foundry. The scroll is the weight knob.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F1EDE4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Instrument+Sans:wght@400..700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#bukti" data-i18n="a11y.skip">Skip to content</a>
+
+<main>
+
+  <!-- Title page. The word is the composition; the marks plane crosses it. -->
+  <section class="hero" id="top" data-hero>
+    <div class="hero__grid" aria-hidden="true"></div>
+
+    <div class="hero__marks" data-marks aria-hidden="true">
+      <span class="crop crop--tl"></span>
+      <span class="crop crop--tr"></span>
+      <span class="crop crop--bl"></span>
+      <span class="crop crop--br"></span>
+      <span class="marks__rule"></span>
+      <span class="marks__specks"></span>
+      <span class="marks__cap" data-i18n="hero.spec">Specimen sheet</span>
+    </div>
+
+    <header class="hero__bar">
+      <p class="foundry">Tapak Aksara</p>
+      <div class="lang" role="group" data-i18n-aria="lang.aria" aria-label="Language">
+        <button type="button" class="lang__btn" data-lang-btn="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang__btn" data-lang-btn="id" aria-pressed="false">ID</button>
+      </div>
+    </header>
+
+    <div class="hero__word">
+      <h1 class="hero__h1 spec">Rimbun</h1>
+    </div>
+
+    <div class="hero__foot">
+      <p class="lede" data-i18n="hero.lede">Rimbun is a display grotesque in nine weights, drawn for long headlines on small screens.</p>
+
+      <div class="axis">
+        <div class="axis__row">
+          <label class="axis__label" for="wght-hero" data-i18n="axis.label">Weight</label>
+          <output class="axis__out" data-wght-out for="wght-hero">420</output>
+        </div>
+        <input class="axis__range" id="wght-hero" type="range" min="200" max="800" step="10" value="420"
+               data-wght-input autocomplete="off">
+        <p class="axis__note" data-i18n="axis.note">One axis holds the whole page.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 1: the same sentence at three sizes, billed as proof. -->
+  <section class="bukti" id="bukti" data-bukti>
+    <div class="bukti__inner">
+      <h2 class="bukti__h2 spec" data-kinetic data-i18n="bukti.h2">Type is read at three distances</h2>
+
+      <p class="bukti__p" data-i18n="bukti.p">Rimbun began as a poster face and ended up doing most of its work at 17 pixels. The counters stay open below 24 pixels, the terminals are cut flat so small sizes do not smear, and the narrow proportions let one headline hold two more words per line than a normal width grotesque.</p>
+
+      <figure class="bukti__proof" data-wipe>
+        <p class="spec spec--md" data-spec-text>Aksara</p>
+        <p class="spec spec--sm" data-spec-text>Aksara</p>
+        <figcaption class="spec__cap" data-i18n="bukti.cap">The same sentence, three sizes apart, in the weight you set.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Chapter 2: the ink ground. Scrolling walks the weight axis. -->
+  <section class="rentang ground-ink" id="rentang" data-rentang>
+    <div class="rentang__pin">
+      <div class="rentang__inner">
+        <h2 class="rentang__h2" data-i18n="rentang.h2">The weight range</h2>
+
+        <p class="rentang__word spec" aria-hidden="true">Rimbun</p>
+
+        <div class="readout">
+          <span class="readout__value spec" data-wght-out aria-hidden="true">420</span>
+          <span class="readout__unit" aria-hidden="true">wght</span>
+        </div>
+
+        <div class="scale" data-scale>
+          <span class="scale__rail" aria-hidden="true"><span class="scale__fill" data-scale-fill></span></span>
+          <ol class="scale__stops">
+            <li class="scale__stop" data-stop="200" style="--at:0"><span class="scale__tick" aria-hidden="true"></span><span class="scale__name" data-i18n="weight.1">Hairline</span><span class="scale__val">200</span></li>
+            <li class="scale__stop" data-stop="350" style="--at:0.25"><span class="scale__tick" aria-hidden="true"></span><span class="scale__name" data-i18n="weight.2">Regular</span><span class="scale__val">350</span></li>
+            <li class="scale__stop" data-stop="450" style="--at:0.4167"><span class="scale__tick" aria-hidden="true"></span><span class="scale__name" data-i18n="weight.3">Medium</span><span class="scale__val">450</span></li>
+            <li class="scale__stop" data-stop="650" style="--at:0.75"><span class="scale__tick" aria-hidden="true"></span><span class="scale__name" data-i18n="weight.4">Bold</span><span class="scale__val">650</span></li>
+            <li class="scale__stop" data-stop="800" style="--at:1"><span class="scale__tick" aria-hidden="true"></span><span class="scale__name" data-i18n="weight.5">Black</span><span class="scale__val">800</span></li>
+          </ol>
+        </div>
+
+        <p class="rentang__cap" data-i18n="rentang.cap">Nine weights ship in the family. Five of them have names.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 3: your own words, at three real sizes. -->
+  <section class="cetak" id="cetak" data-cetak>
+    <div class="cetak__inner">
+      <header class="cetak__head">
+        <h2 data-i18n="cetak.h2">Set your own words</h2>
+        <p data-i18n="cetak.sub">Type anything. The three sizes update as you write, and the weight is whatever the axis is holding.</p>
+      </header>
+
+      <p class="field">
+        <label for="words" data-i18n="cetak.label">Your words</label>
+        <input id="words" type="text" maxlength="22" value="Aksara" data-words autocomplete="off" spellcheck="false">
+      </p>
+
+      <div class="specimens">
+        <figure class="specimen">
+          <p class="spec spec--xl" data-spec-text>Aksara</p>
+          <figcaption class="specimen__meta"><span data-size></span><span data-weight></span></figcaption>
+        </figure>
+        <figure class="specimen">
+          <p class="spec spec--md" data-spec-text>Aksara</p>
+          <figcaption class="specimen__meta"><span data-size></span><span data-weight></span></figcaption>
+        </figure>
+        <figure class="specimen">
+          <p class="spec spec--sm" data-spec-text>Aksara</p>
+          <figcaption class="specimen__meta"><span data-size></span><span data-weight></span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Close: smallest type on the page, the ask as running text. -->
+  <section class="kolofon" id="kolofon">
+    <div class="kolofon__inner">
+      <h2 class="kolofon__h2" data-i18n="kolo.h2">Colophon</h2>
+
+      <div class="kolofon__cols">
+        <div class="kolofon__col">
+          <p class="kolofon__label" data-i18n="kolo.licenceTitle">Licence covers</p>
+          <ul class="kolofon__list">
+            <li data-i18n="kolo.l1">Desktop and print use, up to five seats</li>
+            <li data-i18n="kolo.l2">Web and app embedding, one product</li>
+            <li data-i18n="kolo.l3">Broadcast, film titling and packaging</li>
+          </ul>
+        </div>
+
+        <div class="kolofon__col">
+          <p class="kolofon__label" data-i18n="kolo.indexTitle">On this page</p>
+          <ul class="kolofon__list kolofon__index">
+            <li><a href="#top" data-i18n="nav.top">Title</a></li>
+            <li><a href="#bukti" data-i18n="nav.bukti">Proof</a></li>
+            <li><a href="#rentang" data-i18n="nav.rentang">Range</a></li>
+            <li><a href="#cetak" data-i18n="nav.cetak">Set your words</a></li>
+          </ul>
+        </div>
+
+        <div class="kolofon__col">
+          <p class="kolofon__label" data-i18n="kolo.langTitle">Language</p>
+          <div class="lang lang--plain" role="group" data-i18n-aria="lang.aria" aria-label="Language">
+            <button type="button" class="lang__btn" data-lang-btn="en" aria-pressed="false">English</button>
+            <button type="button" class="lang__btn" data-lang-btn="id" aria-pressed="false">Indonesia</button>
+          </div>
+        </div>
+      </div>
+
+      <p class="kolofon__ask">
+        <span data-i18n="kolo.askLead">Ready to set something in it?</span>
+        <a class="ask" href="#kolofon" data-i18n="cta.ask">Request a licence</a>
+      </p>
+
+      <p class="kolofon__note" data-i18n="kolo.note">A specimen landing page template. The face name, the licence terms and every line of copy here are placeholders, set in a Google variable font.</p>
+    </div>
+  </section>
+
+</main>
+
+<script src="app.js" defer></script>
+</body>
+</html>
